@@ -1,0 +1,45 @@
+from datetime import datetime, timedelta
+
+# Current datetime
+current_datetime = datetime.now()
+print("Current datetime:", current_datetime)
+
+# Add 60 seconds
+datetime_after_60_seconds = current_datetime + timedelta(seconds=60)
+print("Datetime after adding 60 seconds:", datetime_after_60_seconds)
+
+# Subtract 60 seconds
+datetime_before_60_seconds = current_datetime - timedelta(seconds=60)
+print("Datetime before subtracting 60 seconds:", datetime_before_60_seconds)
+
+# Add 2 years
+datetime_after_2_years = current_datetime + timedelta(days=365 * 2)   #Considering leap years
+print("Datetime after adding 2 years:", datetime_after_2_years)
+
+
+from datetime import timedelta
+
+# Create timedelta object for 100 days, 10 hours, and 13 minutes
+delta = timedelta(days=100, hours=10, minutes=13)
+
+# Print the total days, seconds, and microseconds of the timedelta object
+print(f"Total days: {delta.days}")
+print(f"Total seconds: {delta.seconds}")
+print(f"Total microseconds: {delta.microseconds}")
+
+from datetime import datetime, timedelta
+
+def create_datetime(feet, inches):
+    # Get current datetime
+    datetime_object = datetime.now()
+    
+    # Print current datetime and its type
+    print("Current datetime:", datetime_object)
+    print("Type:", type(datetime_object))
+    
+    # Return the datetime object
+    return datetime_object
+
+# Example usage
+create_datetime(5, 7)  
+# Replace 5 and 7 with actual feet and inches values
